@@ -4,6 +4,7 @@ import ScrollToTop from "components/ScrollToTop";
 import ErrorBoundary from "components/ErrorBoundary";
 // Add your imports here
 import Login from "pages/login";
+import Dashboard from "pages/dashboard";
 import ActiveCallInterface from "pages/active-call-interface";
 import CallHistoryTranscripts from "pages/call-history-transcripts";
 import SettingsConfiguration from "pages/settings-configuration";
@@ -16,7 +17,8 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your routes here */}
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/active-call-interface" element={<ActiveCallInterface />} />
         <Route path="/call-history-transcripts" element={<CallHistoryTranscripts />} />
